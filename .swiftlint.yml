@@ -1,0 +1,18 @@
+opt_in_rules:
+  - "missing_docs"
+
+excluded:
+  .build/
+
+identifier_name:
+  allowed_symbols: ["_"]
+
+nesting:
+  type_level: 2
+
+missing_docs:
+  warning: ["open", "public"] # Eventually, if we can make it work, add internal here too.
+  evaluate_effective_access_control_level: true
+
+line_length:
+  ignores_comments: true
